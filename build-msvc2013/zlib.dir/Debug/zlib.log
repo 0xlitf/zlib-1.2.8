@@ -1,0 +1,56 @@
+﻿生成启动时间为 2016/5/5 13:09:10。
+     1>项目“E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\zlib.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“zlib.dir\Debug\zlib.tlog\zlib.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“zlib.dir\Debug\zlib.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         Building Custom Rule C:/_GitHub/zlib-1.2.8/CMakeLists.txt
+         CMake does not need to re-run because C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /I"..\\build-msvc2013" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_FSEEKO /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D "CMAKE_INTDIR=\"Debug\"" /D ZLIB_DLL /D _WINDLL /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"zlib.dir\Debug\\" /Fd"zlib.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\adler32.c ..\compress.c ..\crc32.c ..\deflate.c ..\gzclose.c ..\gzlib.c ..\gzread.c ..\gzwrite.c ..\inflate.c ..\infback.c ..\inftrees.c ..\inffast.c ..\trees.c ..\uncompr.c ..\zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzclose.c
+         gzlib.c
+         gzread.c
+         gzwrite.c
+         inflate.c
+         infback.c
+         inftrees.c
+         inffast.c
+         trees.c
+         uncompr.c
+         zutil.c
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D WIN32 /D _WINDOWS /D _DEBUG /D NO_FSEEKO /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D "CMAKE_INTDIR=\\\"Debug\\\"" /D ZLIB_DLL /l"0x0409" /I"C:\_GitHub\zlib-1.2.8" /I"C:\_GitHub\zlib-1.2.8\build-msvc2013" /nologo /fo"zlib.dir\Debug\zlib1.res" ..\win32\zlib1.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\zlibd.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\zlibd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\zlibd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug /DLL zlib.dir\Debug\zlib1.res
+         zlib.dir\Debug\adler32.obj
+         zlib.dir\Debug\compress.obj
+         zlib.dir\Debug\crc32.obj
+         zlib.dir\Debug\deflate.obj
+         zlib.dir\Debug\gzclose.obj
+         zlib.dir\Debug\gzlib.obj
+         zlib.dir\Debug\gzread.obj
+         zlib.dir\Debug\gzwrite.obj
+         zlib.dir\Debug\inflate.obj
+         zlib.dir\Debug\infback.obj
+         zlib.dir\Debug\inftrees.obj
+         zlib.dir\Debug\inffast.obj
+         zlib.dir\Debug\trees.obj
+         zlib.dir\Debug\uncompr.obj
+         zlib.dir\Debug\zutil.obj
+            正在创建库 E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\zlibd.lib 和对象 E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\zlibd.exp
+         zlib.vcxproj -> E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\zlibd.dll
+       FinalizeBuildStatus:
+         正在删除文件“zlib.dir\Debug\zlib.tlog\unsuccessfulbuild”。
+         正在对“zlib.dir\Debug\zlib.tlog\zlib.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\zlib.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.36

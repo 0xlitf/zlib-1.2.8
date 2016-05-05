@@ -1,0 +1,23 @@
+﻿生成启动时间为 2016/5/5 13:08:11。
+     1>项目“E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\minigzip.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“minigzip.dir\Debug\minigzip.tlog\minigzip.lastbuildstate”。
+       InitializeBuildStatus:
+         正在对“minigzip.dir\Debug\minigzip.tlog\unsuccessfulbuild”执行 Touch 任务。
+       CustomBuild:
+         Building Custom Rule C:/_GitHub/zlib-1.2.8/CMakeLists.txt
+         CMake does not need to re-run because C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\ /I"..\\build-msvc2013" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D NO_FSEEKO /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"minigzip.dir\Debug\\" /Fd"minigzip.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\test\minigzip.c
+         minigzip.c
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\minigzip.exe" /INCREMENTAL /NOLOGO /LIBPATH:Win32\Debug\ kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib zlibd.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/_GitHub/zlib-1.2.8/build-msvc2013/Debug/minigzip.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/_GitHub/zlib-1.2.8/build-msvc2013/Debug/minigzip.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug minigzip.dir\Debug\minigzip.obj
+         minigzip.vcxproj -> E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\Win32\Debug\minigzip.exe
+       FinalizeBuildStatus:
+         正在删除文件“minigzip.dir\Debug\minigzip.tlog\unsuccessfulbuild”。
+         正在对“minigzip.dir\Debug\minigzip.tlog\minigzip.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\_SVN\07_C++组\C++\Project\VYExamClient\trunk\08_编码及单元测试\3rdParty\zlib-1.2.8\build-msvc2013\minigzip.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.09

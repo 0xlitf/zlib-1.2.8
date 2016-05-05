@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7978F1A4-9C53-49EB-A835-97D2377C217B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\_GitHub\zlib-1.2.8;C:\_GitHub\zlib-1.2.8\build-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\_GitHub\zlib-1.2.8;C:\_GitHub\zlib-1.2.8\build-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\_GitHub\zlib-1.2.8;C:\_GitHub\zlib-1.2.8\build-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\_GitHub\zlib-1.2.8;C:\_GitHub\zlib-1.2.8\build-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/_GitHub/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/_GitHub/zlib-1.2.8 -BC:/_GitHub/zlib-1.2.8/build-msvc2013 --check-stamp-file C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/_GitHub/zlib-1.2.8/CMakeLists.txt;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\_GitHub\zlib-1.2.8\zlib.pc.cmakein;C:\_GitHub\zlib-1.2.8\zconf.h.cmakein;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/_GitHub/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/_GitHub/zlib-1.2.8 -BC:/_GitHub/zlib-1.2.8/build-msvc2013 --check-stamp-file C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/_GitHub/zlib-1.2.8/CMakeLists.txt;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\_GitHub\zlib-1.2.8\zlib.pc.cmakein;C:\_GitHub\zlib-1.2.8\zconf.h.cmakein;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/_GitHub/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/_GitHub/zlib-1.2.8 -BC:/_GitHub/zlib-1.2.8/build-msvc2013 --check-stamp-file C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/_GitHub/zlib-1.2.8/CMakeLists.txt;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\_GitHub\zlib-1.2.8\zlib.pc.cmakein;C:\_GitHub\zlib-1.2.8\zconf.h.cmakein;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/_GitHub/zlib-1.2.8/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/_GitHub/zlib-1.2.8 -BC:/_GitHub/zlib-1.2.8/build-msvc2013 --check-stamp-file C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/_GitHub/zlib-1.2.8/CMakeLists.txt;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystem.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeClDeps.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCCompiler.cmake.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckCSourceCompiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckTypeSize.c.in;C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\CheckTypeSize\OFF64_T.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckFunctionExists.c;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CheckIncludeFile.c.in;C:\_GitHub\zlib-1.2.8\zlib.pc.cmakein;C:\_GitHub\zlib-1.2.8\zconf.h.cmakein;C:\_GitHub\zlib-1.2.8\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\ba4e83b6b2e6fa1cca915cbb0877e1fc\ALL_BUILD.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/ba4e83b6b2e6fa1cca915cbb0877e1fc/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/ba4e83b6b2e6fa1cca915cbb0877e1fc/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/ba4e83b6b2e6fa1cca915cbb0877e1fc/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Build all projects</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/ba4e83b6b2e6fa1cca915cbb0877e1fc/ALL_BUILD.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\_GitHub\zlib-1.2.8\build-msvc2013\CMakeFiles\ALL_BUILD</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CMakeFiles\ALL_BUILD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/_GitHub/zlib-1.2.8/build-msvc2013/ZERO_CHECK.vcxproj">
+      <Project>F7F96135-6225-400A-B2CD-7BBCD45DB766</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/_GitHub/zlib-1.2.8/build-msvc2013/example.vcxproj">
+      <Project>E2AC6F54-A94A-4170-BA29-30AB24458FC2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/_GitHub/zlib-1.2.8/build-msvc2013/minigzip.vcxproj">
+      <Project>A85D874C-C5CA-4631-957E-1F11B4D66262</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/_GitHub/zlib-1.2.8/build-msvc2013/zlib.vcxproj">
+      <Project>E156D07D-23C0-4833-9068-623D48B0F3DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/_GitHub/zlib-1.2.8/build-msvc2013/zlibstatic.vcxproj">
+      <Project>45F2C4E0-94B5-4C70-8654-B233E3B52169</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,6 @@
+C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/ALL_BUILD.dir
+C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/ZERO_CHECK.dir
+C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/example.dir
+C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/minigzip.dir
+C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/zlib.dir
+C:/_GitHub/zlib-1.2.8/build-msvc2013/CMakeFiles/zlibstatic.dir
